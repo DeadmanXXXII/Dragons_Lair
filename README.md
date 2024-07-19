@@ -1,6 +1,7 @@
 # Dragons_Lair
 
 ## Only for Unix and Linux based architecture due to commands executed by scripts or alter for windows.
+## Works particularly well with wordpress based projects. Hence the comment as it was submitted to wordfence.
 
 Organize Your Project StructureEnsure your project structure looks like this:project-directory/
 │
