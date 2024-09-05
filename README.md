@@ -35,16 +35,47 @@ You can expand the GUI and backend functionalities as needed.
 
 STEP BY STEP GUIDE GUI
 
-Step 1: Install Node.js and npmDownload and install Node.js from nodejs.org. This will also install npm (Node Package Manager).Verify the installation:node -v
+Step 1: Install Node.js and npmDownload and install Node.js from nodejs.org. 
+This will also install npm (Node Package Manager).
+Verify the installation: 
+```bash
+node -v
+```
+```bash
 npm -v
-Step 2: Set Up the ProjectInitialize the project:mkdir project-directory
+```
+Step 2: Set Up the Project and Initialize the project:
+```bash
+mkdir project-directory
+```
+```bash
 cd project-directory
+```
+```bash
 npm init -y
-Install Express:npm install expressCreate project files and structure:mkdir public
+```
+Install Express:
+```bash
+npm install express
+```
+Create project files and structure:
+```bash
+mkdir public
+```
+```bash
 touch public/index.html
+```
+```bash
 touch public/app.js
+```
+```bash
 touch server.js
-Step 3: Add HTML and JavaScript Codepublic/index.html:<!DOCTYPE html>
+```
+Step 3: Add HTML and JavaScript Code
+public/
+index.html:
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -151,13 +182,22 @@ app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
 
-Step 4: Run the ServerNavigate to your project directory and start the server:node server.js Accessing the GUI Open your web browser and navigate to http://localhost:3000 to interact with the security monitoring dashboard.
+Step 4: Run the Server:
+Navigate to your project directory and start the server: 
+```bash
+node server.js
+``` 
+Accessing the GUI Open your web browser and navigate to http://localhost:3000 to interact with the security monitoring dashboard.
 
 Step 5
 
 if that doesn't work do this.
 
 Create a file named server.js in your project directory and paste the provided code:
+```bash
+nano server.js
+```
+```bash
 // Base64 encoded functions
 const Base64 = {
   // Encode string to Base64
@@ -330,15 +370,24 @@ const footer = addFooter();
 const content = "<p>Main content goes here</p>"; // Replace with actual content
 const contentWithHeaderAndFooter = header + content + footer;
 console.log(contentWithHeaderAndFooter);
+```
 
 Step 5: Running the Application
-Run the application:node server.js
+Run the application:
+```bash
+node server.js
+```
 Monitor File Integrity and Breach Detection:
-The script will monitor file integrity every hour and check for breaches. It will simulate alerts and actions like quarantining the site and blocking the network access of an attacker. You can adjust the paths and logic to fit your actual use case.
+The script will monitor file integrity every hour and check for breaches. 
+It will simulate alerts and actions like quarantining the site and blocking the network access of an attacker. 
+You can adjust the paths and logic to fit your actual use case.
 
 Step 6: Testing the Application
 Access the breach detection endpoint:Open a web browser and navigate to http://localhost:3000/breach. 
 This should log an attacker’s IP address and simulate a breach detection scenario.
+
 Verify User Management: The script includes functions to add users and a super root account with password encryption. 
+
 These can be tested by examining the console output or by expanding the functionality to interact with a real user database.
+
 Check the Logs: Monitor the console output for log messages related to file changes, breach detections, and other simulated actions.
