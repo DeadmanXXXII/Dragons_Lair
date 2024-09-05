@@ -20,8 +20,18 @@ project-directory/
 
 └── server.js
 
-Step : Install Dependencies and Run the ServerEnsure you have Node.js and npm installed. Then, install Express:npm init -y
-npm install expressFinally, start your server:node server.jsNavigate to http://localhost:3000 in your web browser to interact with your GUI.This setup provides a basic web interface for the security monitoring and user management functions. You can expand the GUI and backend functionalities as needed.
+Step 1: Install Dependencies and Run the Server Ensure you have Node.js and npm installed. 
+Then, install Express:
+
+```bash
+npm init -y
+```
+```bash
+npm install express
+```
+Finally, start your server:node server.js Navigate to http://localhost:3000 in your web browser to interact with your GUI.
+This setup provides a basic web interface for the security monitoring and user management functions. 
+You can expand the GUI and backend functionalities as needed.
 
 STEP BY STEP GUIDE GUI
 
