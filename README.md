@@ -75,6 +75,7 @@ Step 3: Add HTML and JavaScript Code
 public/
 index.html:
 
+```bash
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -181,6 +182,7 @@ const PORT = 3000;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
+```
 
 Step 4: Run the Server:
 Navigate to your project directory and start the server: 
