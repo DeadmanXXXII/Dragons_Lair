@@ -3,15 +3,23 @@
 ## Only for Unix and Linux based architecture due to commands executed by scripts or alter for windows.
 ## Works particularly well with wordpress based projects. Hence the comment as it was submitted to wordfence.
 
-Organize Your Project StructureEnsure your project structure looks like this:project-directory/
+Organize Your Project StructureEnsure your project structure looks like this:
+project-directory/
 │
+
 ├── public/
+
 │   ├── index.html
+
 │   └── app.js
+
 │
 ├── node_modules/
+
 ├── package.json
+
 └── server.js
+
 Step : Install Dependencies and Run the ServerEnsure you have Node.js and npm installed. Then, install Express:npm init -y
 npm install expressFinally, start your server:node server.jsNavigate to http://localhost:3000 in your web browser to interact with your GUI.This setup provides a basic web interface for the security monitoring and user management functions. You can expand the GUI and backend functionalities as needed.
 
